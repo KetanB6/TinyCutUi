@@ -1,0 +1,142 @@
+body {
+  background: linear-gradient(135deg, #f9f9f9, #eaf3ff);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.TinyCut {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 25px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 65vh;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 15px;
+  color: #6c757d;
+}
+
+.urlInput {
+  width: 38vw;
+  height: 6vh;
+  border-radius: 8px;
+  border: 2px solid #ced4da;
+  background-color: #f8f9fa;
+  color: #212529;
+  font-size: 18px;
+  padding: 0 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.urlOutput{
+  margin-top: 25px;
+}
+
+.urlInput:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+}
+
+button {
+  margin-top: 25px;
+  width: 8vw;
+  height: 6vh;
+  background: #4a90e2;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 1024px) {
+  .mainBox {
+    margin-top: 10vh;
+    width: 70vw;
+    height: auto;
+    padding: 25px;
+  }
+
+  .urlInput {
+    width: 60vw;
+    font-size: 16px;
+  }
+
+  button {
+    width: 25vw;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .TinyCut {
+    font-size: 28px;
+    margin: 20px 10px;
+  }
+
+  .mainBox {
+    width: 85vw;
+    padding: 20px;
+  }
+
+  .urlInput {
+    width: 75vw;
+    height: 6vh;
+    font-size: 15px;
+  }
+
+  button {
+    width: 50vw;
+    height: 6vh;
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 14px;
+    margin: 20px 10px;
+  }
+}
