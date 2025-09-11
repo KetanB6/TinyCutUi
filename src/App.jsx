@@ -41,7 +41,9 @@ function App() {
             <input type='text' name='longURL' value={input.longURL} placeholder='Enter Complete URL Here' className='urlInput' onChange={handleChange} required/>
           </form>
           <button type='submit' onClick={handleSubmit}>Create</button>
-          <a href={output} target='_blank'  className="urlOutput">{output}</a>
+          <div class="url">
+            <a href={output} target='_blank'  className="urlOutput">{output}</a>
+          </div>
         </div>
       </div>
       <div className="footer">
