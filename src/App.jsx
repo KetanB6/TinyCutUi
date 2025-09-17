@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Nav from "./components/Navbar"
 import nprogress from 'nprogress'
 import axios from 'axios'
 
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <>
+    <Nav/>
       <div className="TinyCut">TinyCut</div>
       <div className="container">
         <div className="mainBox">
