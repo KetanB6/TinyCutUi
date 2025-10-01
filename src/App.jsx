@@ -19,7 +19,7 @@ function App() {
       try {
         nprogress.start(); 
 
-        const response = await axios.post(`https://tinycut-s9nb.onrender.com/shortURL`,input);
+        const response = await axios.post(`https://tinycut-pbtb.onrender.com/shortURL`,input);
         setOutput(response.data);
         setInput({ shortURL: '', longURL: '' });
       } catch (err) {
@@ -43,7 +43,7 @@ function App() {
             <input type='text' name='longURL' value={input.longURL} placeholder='Enter Complete URL Here' className='urlInput' onChange={handleChange} required/>
           </form>
           <button type='submit' onClick={handleSubmit}>Create</button>
-          <div class="url">
+          <div className="url">
             <a href={output} target='_blank'  className="urlOutput">{output}</a>
           </div>
         </div>
@@ -51,6 +51,9 @@ function App() {
       <div className="footer">
         Solution to make your links shorter
       </div>
+      <p style={{fontSize:"12px", color:"gray", textAlign:"center", marginLeft:"3px", position:"fixed", bottom:"20px", width: "200px"}}>
+        Note: This website is for demo purposes only. It uses an in-memory H2 database and does not persist any data.
+    </p>
     </>
   )
 }

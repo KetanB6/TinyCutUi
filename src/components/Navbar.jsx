@@ -8,7 +8,7 @@ export const Navbar = () => {
 
     const healthCheck = async () => {
       try {
-        const resp = await axios.get("https://tinycut-s9nb.onrender.com/health");
+        const resp = await axios.get("https://tinycut-pbtb.onrender.com/health");
         console.log("Health response:", resp.data); 
 
         if (resp.data === "Server is running!") {
